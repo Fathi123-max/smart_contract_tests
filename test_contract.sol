@@ -2,30 +2,43 @@
 pragma solidity ^0.8.26;
 
 contract HelloWorld {
-    string  message;
-    address  contractAddress;
+    string message;
+    address contractAddress;
     int256 numberNigative = -88;
-    
-    bytes32 public b= "some_message";
-    string public name;
-    bool public isActive;
 
-    constructor() {
-        message = "Hello world";
-    b="heelo";
-    isActive = true;
+    bytes32 b = "some_message";
+    string name;
+    bool isActive;
+
+    struct  user  {
+        string name;
+        uint256 age;
+    }
+
+
+
+    user[5] public usersList;
+
+    user public firstUser = user("mohammad", 10);
+
+    function setNewUser(string calldata userName, uint256 userAge) public {
+        
+        
+        usersList[0] = user(userName, userAge);
+
+
     }
 
     event ValueChanged(uint256 oldValue, uint256 newValue);
 
-    function setNewValue(uint256 oldValue, uint256 newValue) internal {
+    function setNewValue(uint256 oldValue, uint256 newValue) public {
         emit ValueChanged(++oldValue, ++newValue);
     }
 
-    mapping(address => uint256) public balance;
+    mapping(uint256 => uint256) public balance;
 
-    function setMap(address a, uint256 bh) public {
-        balance[a] = bh;
+    function getMap() public view returns (uint256) {
+        return balance[0];
     }
 
     function getnSum(uint256 firstInput, uint256 secondInput)
@@ -59,16 +72,10 @@ contract HelloWorld {
 
     //classes
 
-    struct user {
-        string name;
-        uint256 age;
-    }
+    // struct user {
+    //     string name;
+    //     uint256 age;
+    // }
 
-    mapping(address => user) public userList;
-
-
-
-        
-
-    
+    // mapping(address => user) public userList;
 }

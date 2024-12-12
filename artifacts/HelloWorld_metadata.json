@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -30,24 +25,11 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "b",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"name": "balance",
@@ -78,6 +60,37 @@
 					}
 				],
 				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "firstUser",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -118,19 +131,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "isActive",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "int256",
@@ -150,32 +150,19 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "a",
-						"type": "address"
+						"internalType": "string",
+						"name": "userName",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "bh",
+						"name": "userAge",
 						"type": "uint256"
 					}
 				],
-				"name": "setMap",
+				"name": "setNewUser",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -183,12 +170,30 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "oldValue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newValue",
+						"type": "uint256"
 					}
 				],
-				"name": "userList",
+				"name": "setNewValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "usersList",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -233,11 +238,11 @@
 	},
 	"sources": {
 		"test_contract.sol": {
-			"keccak256": "0x16fe674b01830f45db1a814ed305b19f8f5b809a906771bfea23d284612ebecb",
+			"keccak256": "0xac3de8cd64c94be4be568fd51efae3b5a6a3ce151a7ab84ef3b81e68dd94cc01",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://54f44e3242bfec63a67f4269df7e4fdb04a1f1b89e1642a85babec3e44d694cb",
-				"dweb:/ipfs/QmfPmEAkMSD3WpeJk758AQRK9feVukDgmxqGyMPLmXFfqR"
+				"bzz-raw://2c4fa8dfd603e85961a88b2dc3b967b333af2f6510f91d52bd7edd22999dd916",
+				"dweb:/ipfs/QmPbyjYQgHp9eRUgmGgVbgtuV3GRTA7G6vjfrRP5XCSGz6"
 			]
 		}
 	},
