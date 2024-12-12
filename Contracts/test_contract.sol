@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.24;
 
-contract HelloWorld {
+contract World {
    
     struct  user  {
         string name;
@@ -12,10 +12,10 @@ contract HelloWorld {
 
   
 
-    function setNewUser(string calldata userName, uint256 userAge) public {
+    function setNewUser(string calldata uinpitName, uint256 userAge) public {
         
         
-        usersList.push(user(userName,userAge));
+        usersList.push(user(uinpitName,userAge));
 
 
     }
