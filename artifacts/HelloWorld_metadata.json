@@ -6,150 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "oldValue",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "newValue",
-						"type": "uint256"
-					}
-				],
-				"name": "ValueChanged",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "int256",
-						"name": "count",
-						"type": "int256"
-					}
-				],
-				"name": "checkCount",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "firstUser",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "age",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getMap",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getMessage",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "firstInput",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "secondInput",
-						"type": "uint256"
-					}
-				],
-				"name": "getnSum",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "int256",
-						"name": "base",
-						"type": "int256"
-					}
-				],
-				"name": "loop",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -163,24 +19,6 @@
 					}
 				],
 				"name": "setNewUser",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "oldValue",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "newValue",
-						"type": "uint256"
-					}
-				],
-				"name": "setNewValue",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -238,11 +76,11 @@
 	},
 	"sources": {
 		"test_contract.sol": {
-			"keccak256": "0xac3de8cd64c94be4be568fd51efae3b5a6a3ce151a7ab84ef3b81e68dd94cc01",
+			"keccak256": "0x297f15c927e42ed30d430e9b788985d4b27d391a61d45d8d594639659c29f4a9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2c4fa8dfd603e85961a88b2dc3b967b333af2f6510f91d52bd7edd22999dd916",
-				"dweb:/ipfs/QmPbyjYQgHp9eRUgmGgVbgtuV3GRTA7G6vjfrRP5XCSGz6"
+				"bzz-raw://b863acd3a9a58aa46ab648cff96862e27f99a6b0acebdd6dd08ab239f6618dec",
+				"dweb:/ipfs/QmPLu99F2LVHHwRRTi5yzd58gP5Qj4pF9iWp5qGrpjP3qX"
 			]
 		}
 	},
