@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "dealWithCintract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "helloContract",
+				"outputs": [
+					{
+						"internalType": "contract HelloContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/factory_contract.sol": "HelloFactoryContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/factory_contract.sol": {
+			"keccak256": "0x02282a354801097ae80c2e179c7f67cea5f6d74f8a12ccf879ee81980b9e135b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://96860de80e860f32e262b83427611e7658c83a4c57f3041c2270f075e65e0b57",
+				"dweb:/ipfs/QmXzn4U1sDoKTPq4bVdPCKVPqMjNTmheJ7EeaRgtaZ1DzA"
+			]
+		},
+		"Contracts/simple_contract.sol": {
+			"keccak256": "0xe1e90b2fcb239fe50cbc0e13ccb0f4bcd3205d41e6927f79f3d116d0fbb8a234",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cfb83a37b1dd189e4d9ab288572ee682976957d30195a1dc8508f7ca216f75f9",
+				"dweb:/ipfs/QmVRFxcY2PbYpvmr4woWcD1rTiUkpHSoh8PUdanG996oS7"
+			]
+		}
+	},
+	"version": 1
+}
