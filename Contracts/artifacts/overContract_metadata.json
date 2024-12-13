@@ -80,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Contracts/simple_contract.sol": "HelloContract"
+			"Contracts/override_contract.sol": "overContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -94,12 +94,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Contracts/simple_contract.sol": {
-			"keccak256": "0x6649d6aed2697cf56be742a575d6ce04828413b1d7341b936f3c1efda0c2c10b",
+		"Contracts/override_contract.sol": {
+			"keccak256": "0x859692e96cc3dd7d83934e04f23edaa09e3ec2d7993e76bdf6aa304553df52b5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://95074a5b8ad76cf0d6acf9a30ca6ea5718fbb587f161ad4dc92e0a7e91d8fc2d",
-				"dweb:/ipfs/QmXbLWD8mV71hqJ29dShb6RFPbMZHNeptMmDCKyC755cQB"
+				"bzz-raw://1d31cb43ed6dfb59f61043d0761ae9a025f1bd9dbadaa52f17cd8de9516970b6",
+				"dweb:/ipfs/QmfDnj9esWdPNXtiyt7MK837SskVjUmsFw81t9gt5ZVfsn"
+			]
+		},
+		"Contracts/simple_contract.sol": {
+			"keccak256": "0x079162cc48652c24ce400651a478c1d72d695b510c89e9558c08b6f0693fcfae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://02be79541e6e83068257c378727a62e95c6ba0a650f23db1d06a4a7799828673",
+				"dweb:/ipfs/Qmd2LsyqJB1o4AkseYVzdLSfgEciaRWyNzBnus3Zj52kzL"
 			]
 		}
 	},

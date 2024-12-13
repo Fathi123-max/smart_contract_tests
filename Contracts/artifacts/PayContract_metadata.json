@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/pay_contract.sol": "PayContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/pay_contract.sol": {
+			"keccak256": "0xf042ce3f744d4f21f8e1fe1e8360b7c0715d35b157abe9cd41dce60b161c74e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://179e0e884405a16cda9d1e0fbe8a42cd5e1a94b336229335bb6d62e28892d5d8",
+				"dweb:/ipfs/QmatQH99xfG8wV8oXCp71AQZniGByBM2XDLTZkNngmXRD1"
+			]
+		}
+	},
+	"version": 1
+}
