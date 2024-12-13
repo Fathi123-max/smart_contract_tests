@@ -6,18 +6,47 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "dealWithCintract",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "contractIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "useAge",
+						"type": "uint256"
+					}
+				],
+				"name": "addNewUserInHelloContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "helloContract",
+				"name": "createNewHelloContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfHelloAdressesContracts",
 				"outputs": [
 					{
-						"internalType": "contract HelloContract",
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -26,13 +55,37 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "owner",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "contractIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "showUserAge",
 				"outputs": [
 					{
-						"internalType": "address payable",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "showlist",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -67,19 +120,19 @@
 	},
 	"sources": {
 		"Contracts/factory_contract.sol": {
-			"keccak256": "0x02282a354801097ae80c2e179c7f67cea5f6d74f8a12ccf879ee81980b9e135b",
+			"keccak256": "0x410093feed6484b95adbd0ddda388c662c5af835c0f059682c74ba4fdfd03a38",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://96860de80e860f32e262b83427611e7658c83a4c57f3041c2270f075e65e0b57",
-				"dweb:/ipfs/QmXzn4U1sDoKTPq4bVdPCKVPqMjNTmheJ7EeaRgtaZ1DzA"
+				"bzz-raw://fb8e41e7f271394c9b1792591b0dd5acb063edbb4fc5cbb5504545178e321168",
+				"dweb:/ipfs/QmTEuekDMU4tXRdYiHqvJGC3SRx2sARWzmZTe4C1SmvP9R"
 			]
 		},
 		"Contracts/simple_contract.sol": {
-			"keccak256": "0xe1e90b2fcb239fe50cbc0e13ccb0f4bcd3205d41e6927f79f3d116d0fbb8a234",
+			"keccak256": "0x079162cc48652c24ce400651a478c1d72d695b510c89e9558c08b6f0693fcfae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cfb83a37b1dd189e4d9ab288572ee682976957d30195a1dc8508f7ca216f75f9",
-				"dweb:/ipfs/QmVRFxcY2PbYpvmr4woWcD1rTiUkpHSoh8PUdanG996oS7"
+				"bzz-raw://02be79541e6e83068257c378727a62e95c6ba0a650f23db1d06a4a7799828673",
+				"dweb:/ipfs/Qmd2LsyqJB1o4AkseYVzdLSfgEciaRWyNzBnus3Zj52kzL"
 			]
 		}
 	},

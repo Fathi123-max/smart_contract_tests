@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 import {HelloContract} from "Contracts/simple_contract.sol";
 
 contract HelloFactoryContract {
-    address[] listOfHelloAdressesContracts;
+    address[] public listOfHelloAdressesContracts;
 
     function createNewHelloContract() public {
         listOfHelloAdressesContracts.push(address(new HelloContract()));
@@ -27,12 +27,12 @@ function showlist() public view returns (uint256) {
     return listOfHelloAdressesContracts.length;
     
 }
-    function showUserAge( uint256 contractIndex )public   view returns (uint256) {
+    function showUserAge( uint256 contractIndex, uint256 userIndex  )public   view returns (uint256) {
         HelloContract userContract = HelloContract(
             listOfHelloAdressesContracts[contractIndex]
         );
 
-    return  userContract.showUserAge(contractIndex);
+    return  userContract.showUserAge(userIndex);
 
     }
 
